@@ -1,0 +1,126 @@
+import React from 'react';
+import { language } from '../language';
+import { LanguageContext } from '../context/LanguageContext';
+import { useContext } from 'react';
+
+
+function SectionLike() {
+    const { setLanguageType, languageType } = useContext(LanguageContext);
+  return (
+    <div className='flex'>
+
+    <section className='trends pt-5 pl-7 relative'>
+
+        <form className='trends-form'>
+            <input placeholder={language[languageType].main.section2.ul.li.title1} className='trends-input w-[374px]' type="text" />
+        </form>
+
+        <div>
+            <ul className='w-[380px] flex flex-wrap mt-[10px]'>
+                <li>
+                    <img src="./images/m1.png" alt="img" />
+                </li>
+                <li>
+                    <img src="./images/m2.png" alt="img" />
+                </li>
+                <li>
+                    <img src="./images/m3.png" alt="img" />
+                </li>
+                <li>
+                    <img src="./images/m4.png" alt="img" />
+                </li>
+                <li>
+                    <img src="./images/m5.png" alt="img" />
+                </li>
+                <li>
+                    <img src="./images/m6.png" alt="img" />
+                </li>
+            </ul>
+        </div>
+
+        
+        <div className='might'>
+            <h3 className='might-title'>
+                {language[languageType].main.section2.ul.li.title7}
+            </h3>
+            <div className='flex items-center'>
+                <img src="./images/mushtariy.svg" alt="" />
+                <div className='might-box'>
+                    <h4 className='might-text '> {language[languageType].main.section2.ul.li.title8}</h4>
+                    <a className='might-link mt-[10px]' href="">@Mushtar565266</a>
+                </div>
+                <button className='might-btn w-[100px]'>{language[languageType].main.section2.ul.li.title10}</button>
+            </div>
+            <div className='flex items-center mt-6 justify-between'>
+                <img src="./images/shuhrat.svg" alt="" />
+                <div className='might-box'>
+                    <h4 className='might-text'> {language[languageType].main.section2.ul.li.title9}</h4>
+                    <a className='might-link mt-[10px] ' href="">@mrshukhrat</a>
+                </div>
+                <button className='might-btn w-[100px] '>{language[languageType].main.section2.ul.li.title10}</button>
+            </div>
+            <a className='might-link mt-[25px]' href="#">{language[languageType].main.section2.ul.li.title6}</a>
+        </div>
+
+
+        <div className='trends-top-block'>
+            <div className='flex space-between box'>
+                <h3 className='trends-top__title'>
+                    {language[languageType].main.section2.ul.li.title2}
+                </h3>
+                <img src="./images/settings.svg" alt="" />
+            </div>
+
+            <ul className='trends-list'>
+                <li className='trends-list-item mt-5 flex justify-between '>
+                    <div>
+                        <p className='trends-text font-normal opacity-60'>
+                            {language[languageType].main.section2.ul.li.title3}
+                        </p>
+                        <h3 className='trends-item-title'>
+                            {language[languageType].main.section2.ul.li.title4}
+                        </h3>
+                        <p className='trends-text  font-normal opacity-60'>
+                            {language[languageType].main.section2.ul.li.title5}
+                        </p>
+                    </div>
+                    <img src="./images/left-bt.svg" alt="" />
+                </li>
+                <li className='trends-list-item mt-5 flex justify-between '>
+                    <div>
+                        <p className='trends-text font-normal opacity-60'>
+                            {language[languageType].main.section2.ul.li.title3}
+                        </p>
+                        <h3 className='trends-item-title'>
+                            {language[languageType].main.section2.ul.li.title4}
+                        </h3>
+                        <p className='trends-text  font-normal opacity-60'>
+                            {language[languageType].main.section2.ul.li.title5}
+                        </p>
+                    </div>
+                    <img src="./images/left-bt.svg" alt="" />
+                </li>
+                <li className='trends-list-item mt-5 flex justify-between '>
+                    <div>
+                        <p className='trends-text font-normal opacity-60'>
+                            {language[languageType].main.section2.ul.li.title3}
+                        </p>
+                        <h3 className='trends-item-title'>
+                            {language[languageType].main.section2.ul.li.title4}
+                        </h3>
+                        <p className='trends-text  font-normal opacity-60'>
+                            {language[languageType].main.section2.ul.li.title5}
+                        </p>
+                    </div>
+                    <img src="./images/left-bt.svg" alt="" />
+                </li>
+                <a className='trends-link' href="#">{language[languageType].main.section2.ul.li.title6}</a>
+            </ul>
+        </div>
+
+    </section>
+</div>
+  )
+}
+
+export default SectionLike
