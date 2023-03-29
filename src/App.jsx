@@ -37,10 +37,7 @@ function App() {
     };
 
 
-
-
-
-    const { setIsLogin, isLogin } = useContext(LoginContext);
+ const { setIsLogin, isLogin } = useContext(LoginContext);
 
     const logoutHandler = () => {
         setIsLogin(false);
